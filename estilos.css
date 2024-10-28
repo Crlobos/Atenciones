@@ -1,0 +1,259 @@
+:root {
+    --hunter-green: #2ecc71;
+    --hunter-dark: #27ae60;
+    --hunter-yellow: #f1c40f;
+    --hunter-black: #2c3e50;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://wallpaperaccess.com/full/1078161.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(44, 62, 80, 0.9);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.3);
+    border: 2px solid var(--hunter-green);
+}
+
+h2 {
+    color: var(--hunter-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--hunter-green);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--hunter-yellow);
+    box-shadow: 0 0 10px var(--hunter-green);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+label {
+    color: var(--hunter-yellow);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: var(--hunter-green);
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: var(--hunter-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.btn-secondary {
+    background-color: var(--hunter-black);
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 73, 94, 0.4);
+}
+
+.table {
+    margin-top: 30px;
+    background-color: rgba(44, 62, 80, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: var(--hunter-green);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.table tbody td {
+    color: #fff;
+    border-color: rgba(46, 204, 113, 0.2);
+    padding: 12px;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(46, 204, 113, 0.2);
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: var(--hunter-black);
+    border: 2px solid var(--hunter-green);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--hunter-green);
+}
+
+.modal-title {
+    color: var(--hunter-yellow);
+}
+
+.btn-close {
+    color: #fff;
+}
+
+/* Personalización de DataTables */
+.dataTables_wrapper {
+    color: #fff;
+}
+
+.dataTables_length select,
+.dataTables_filter input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid var(--hunter-green);
+}
+
+.dataTables_info,
+.dataTables_paginate {
+    color: #fff !important;
+    margin-top: 10px;
+}
+
+.paginate_button {
+    color: var(--hunter-green) !important;
+}
+
+.paginate_button.current {
+    background: var(--hunter-green) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* Personalización de SweetAlert */
+.swal2-popup {
+    background-color: var(--hunter-black) !important;
+    border: 2px solid var(--hunter-green);
+}
+
+.swal2-title,
+.swal2-content {
+    color: #fff !important;
+}
+
+.swal2-confirm {
+    background-color: var(--hunter-green) !important;
+}
+
+.swal2-cancel {
+    background-color: #e74c3c !important;
+}
+
+/* Animaciones */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px var(--hunter-green); }
+    50% { box-shadow: 0 0 20px var(--hunter-green); }
+    100% { box-shadow: 0 0 5px var(--hunter-green); }
+}
+
+.container {
+    animation: glow 3s infinite;
+}
+
+/* Personalización adicional para selects */
+select.form-control option {
+    background-color: var(--hunter-black);
+    color: #fff;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--hunter-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hunter-green);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hunter-dark);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .table {
+        font-size: 0.9em;
+    }
+}
+
+/* Efectos hover adicionales */
+.form-group:hover label {
+    color: var(--hunter-green);
+    transition: color 0.3s ease;
+}
+
+/* Estilos para mensajes de validación */
+.invalid-feedback {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #e74c3c;
+}
+
+.was-validated .form-control:valid {
+    border-color: var(--hunter-green);
+}
